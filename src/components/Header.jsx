@@ -1,9 +1,12 @@
+import { React, Component } from "react"
+
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 import Container from "./common/Container"
 import Button from "./common/Button"
+import MenuButton from "./common/MenuButton"
 
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import tw from "twin.macro"
 
@@ -28,39 +31,52 @@ const Menu = styled.div`
 const MenuItem = styled(Link)`
   ${tw`block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4`};
 `
-const MenuButton = styled.button`
-  ${tw`lg:hidden flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white`};
-`
 
-const Header = ({ siteTitle }) => (
-  <HeaderWrapper>
-    <Container>
-      <NavBar>
-        <NavBarLeft>
-          <Logo>{siteTitle}</Logo>
-        </NavBarLeft>
-        <MenuButton>
-          <svg
-            css={tw`fill-current h-3 w-3`}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </MenuButton>
-        <NavBarRight>
-          <Menu>
-            <MenuItem to="/page-2/">Go to page 2</MenuItem>
-            <MenuItem to="/page-2/">Go to page 2</MenuItem>
-            <MenuItem to="/page-2/">Go to page 2</MenuItem>
-            <Button>Download</Button>
-          </Menu>
-        </NavBarRight>
-      </NavBar>
-    </Container>
-  </HeaderWrapper>
-)
+class Header extends Component {
+  state = {
+    showMenuMobile: false,
+  }
+
+  handleMenuButtonClick = () => {
+    this.setState({
+      showMenuMobile: !this.state.showMenuMobile,
+    })
+  }
+
+  render() {
+    const { siteTitle } = this.props
+    const { showMenuMobile } = this.state
+    return (
+      <HeaderWrapper>
+        <Container>
+          <NavBar>
+            <NavBarLeft>
+              <Logo>{siteTitle}</Logo>
+            </NavBarLeft>
+            <MenuButton onMenuButtonClick={this.handleMenuButtonClick} />
+            <NavBarRight
+              css={
+                showMenuMobile
+                  ? ""
+                  : css`
+                      @media screen and (max-width: 1023px) {
+                        display: none;
+                      }
+                    `
+              }
+            >
+              <Menu>
+                <MenuItem to="/">Home</MenuItem>
+                <MenuItem to="/page-2/">Page 2</MenuItem>
+                <Button>Contact</Button>
+              </Menu>
+            </NavBarRight>
+          </NavBar>
+        </Container>
+      </HeaderWrapper>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
