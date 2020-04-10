@@ -13,8 +13,10 @@
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-postcss": "^2.2.1",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-typography": "^2.4.1",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
     "postcss-import": "^12.0.1",
@@ -23,9 +25,13 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
+    "react-typography": "^0.16.19",
+    "slick-carousel": "^1.8.1",
     "stylelint": "^13.3.0",
     "tailwindcss": "^1.2.0",
-    "twin.macro": "^1.0.0-alpha.8"
+    "twin.macro": "^1.0.0-alpha.8",
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

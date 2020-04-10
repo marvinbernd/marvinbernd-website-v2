@@ -15,9 +15,7 @@ import tw from "twin.macro"
 import Header from "./Header"
 import Footer from "./Footer"
 
-const Main = styled.main`
-  ${tw`py-8`};
-`
+const Main = styled.main``
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,7 +32,6 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Main>{children}</Main>
-      <Footer />
     </>
   )
 }

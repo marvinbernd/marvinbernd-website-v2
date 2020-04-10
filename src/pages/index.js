@@ -1,26 +1,45 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import tw from "twin.macro"
+
+import Layout from "../components/Layout"
+import Footer from "../components/Footer"
+import Image from "../components/common/Image"
+import SEO from "../components/common/SEO"
 import Section from "../components/common/Section"
 import Container from "../components/common/Container"
+import Grid from "../components/common/Grid"
+import ImageCarousel from "../components/common/ImageCarousel"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Section>
-      <Container>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
+
+    <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
+      <Section css={tw`flex flex-col justify-between pt-24 lg:pt-12`}>
+        <div></div>
+        <div>
+          <h1>
+            Ich bin selbstständiger Web Designer &amp; Entwickler aus Frankfurt,
+            Deutschland.
+          </h1>
+          <p>
+            Design, Entwicklung und Beratung. Mit diesen drei Themen unterstütze
+            ich seit mehreren Jahren Firmen und Agenturen bei der Umsetzung von
+            Web-Projekten. Von Newsletter-Kampagnen bis hin zu mehrsprachigen
+            Online-Shops. Egal welcher Projektumfang, mir ist dabei immer
+            wichtig ein einzigartiges Produkt mit einer hohen Qualität und
+            langfristiger Skalierbarkeit zu entwickeln.
+          </p>
+          <Link to="/page-2/">Mehr erfahren</Link>
         </div>
-        <Link to="/page-2/">Go to page 2</Link>
-      </Container>
-    </Section>
+        <Footer css={tw`self-end`} />
+      </Section>
+      <Section css={tw`bg-primary flex flex-col justify-center`}>
+        <ImageCarousel />
+      </Section>
+    </Grid>
   </Layout>
 )
 

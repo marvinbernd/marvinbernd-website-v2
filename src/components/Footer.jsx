@@ -5,16 +5,14 @@ import styled from "@emotion/styled"
 import tw from "twin.macro"
 
 const FooterWrapper = styled.footer`
-  ${tw`p-6`};
+  ${tw`text-sm`}
 `
 
 const Footer = ({ siteTitle }) => (
   <FooterWrapper>
-    <Container>
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </Container>
+    <a href="https://www.gatsbyjs.org">Impressum</a>
+    {` `}
+    <a href="https://www.gatsbyjs.org">Datenschutz</a>
   </FooterWrapper>
 )
 

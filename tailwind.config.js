@@ -7,8 +7,8 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      display: ["Gilroy", "sans-serif"],
-      body: ["Graphik", "sans-serif"],
+      display: ["Poppins", "sans-serif"],
+      body: ["Poppins", "sans-serif"],
     },
     borderWidth: {
       default: "1px",

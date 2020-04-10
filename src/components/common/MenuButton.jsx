@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import tw from "twin.macro"
 
 const Button = styled.button`
-  ${tw`lg:hidden flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white`};
+  ${tw`flex items-center px-3 py-2 border rounded text-black`};
 `
 
 const MenuButton = ({ onMenuButtonClick }) => (

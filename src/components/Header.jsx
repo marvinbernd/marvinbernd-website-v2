@@ -11,7 +11,7 @@ import styled from "@emotion/styled"
 import tw from "twin.macro"
 
 const HeaderWrapper = styled.header`
-  ${tw`bg-teal-500 p-6`};
+  ${tw`py-8 px-16 absolute w-full`};
 `
 const NavBar = styled.nav`
   ${tw`flex items-center justify-between flex-wrap`};
@@ -20,10 +20,10 @@ const NavBarLeft = styled.div`
   ${tw`flex items-center flex-grow text-white mr-6`};
 `
 const NavBarRight = styled.div`
-  ${tw`w-full block flex-shrink-0 lg:flex lg:items-center lg:w-auto`};
+  ${tw`w-full block flex-shrink-0 flex items-center w-auto`};
 `
 const Logo = styled.span`
-  ${tw`font-semibold text-xl tracking-tight`};
+  ${tw`text-black font-semibold text-xl tracking-tight`};
 `
 const Menu = styled.div`
   ${tw`text-sm lg:flex-grow`};
@@ -48,31 +48,15 @@ class Header extends Component {
     const { showMenuMobile } = this.state
     return (
       <HeaderWrapper>
-        <Container>
-          <NavBar>
-            <NavBarLeft>
-              <Logo>{siteTitle}</Logo>
-            </NavBarLeft>
+        <NavBar>
+          <NavBarLeft>
+            <Logo>{siteTitle}</Logo>
+          </NavBarLeft>
+
+          <NavBarRight>
             <MenuButton onMenuButtonClick={this.handleMenuButtonClick} />
-            <NavBarRight
-              css={
-                showMenuMobile
-                  ? ""
-                  : css`
-                      @media screen and (max-width: 1023px) {
-                        display: none;
-                      }
-                    `
-              }
-            >
-              <Menu>
-                <MenuItem to="/">Home</MenuItem>
-                <MenuItem to="/page-2/">Page 2</MenuItem>
-                <Button>Contact</Button>
-              </Menu>
-            </NavBarRight>
-          </NavBar>
-        </Container>
+          </NavBarRight>
+        </NavBar>
       </HeaderWrapper>
     )
   }
