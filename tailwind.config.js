@@ -16,9 +16,14 @@ module.exports = {
       "2": "2px",
       "4": "4px",
     },
+    inset: {
+      "0": "0",
+      auto: "auto",
+      "1/2": "50%",
+    },
     extend: {
       colors: {
-        primary: "#F84525",
+        primary: "#031761",
         gray: {
           default: "#242424",
           dark: "#1B1B1C",

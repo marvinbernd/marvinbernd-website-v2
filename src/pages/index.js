@@ -36,7 +36,7 @@ const IndexPage = () => (
         </div>
         <Footer css={tw`self-end`} />
       </Section>
-      <Section css={tw`bg-primary flex flex-col justify-center`}>
+      <Section css={tw`bg-primary flex flex-col justify-center p-8`}>
         <ImageCarousel />
       </Section>
     </Grid>

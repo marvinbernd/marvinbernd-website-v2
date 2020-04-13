@@ -6,6 +6,9 @@ import tw from "twin.macro"
 
 const FooterWrapper = styled.footer`
   ${tw`text-sm`}
+  a {
+    ${tw`font-normal`}
+  }
 `
 
 const Footer = ({ siteTitle }) => (

@@ -11,7 +11,7 @@ import styled from "@emotion/styled"
 import tw from "twin.macro"
 
 const HeaderWrapper = styled.header`
-  ${tw`py-8 px-16 absolute w-full`};
+  ${tw`py-8 px-16 absolute w-full z-50`};
 `
 const NavBar = styled.nav`
   ${tw`flex items-center justify-between flex-wrap`};
@@ -33,19 +33,9 @@ const MenuItem = styled(Link)`
 `
 
 class Header extends Component {
-  state = {
-    showMenuMobile: false,
-  }
-
-  handleMenuButtonClick = () => {
-    this.setState({
-      showMenuMobile: !this.state.showMenuMobile,
-    })
-  }
-
+  state = {}
   render() {
-    const { siteTitle } = this.props
-    const { showMenuMobile } = this.state
+    const { siteTitle, showOffCanvas, onMenuButtonClick } = this.props
     return (
       <HeaderWrapper>
         <NavBar>
@@ -54,7 +44,10 @@ class Header extends Component {
           </NavBarLeft>
 
           <NavBarRight>
-            <MenuButton onMenuButtonClick={this.handleMenuButtonClick} />
+            <MenuButton
+              showOffCanvas={showOffCanvas}
+              onMenuButtonClick={onMenuButtonClick}
+            />
           </NavBarRight>
         </NavBar>
       </HeaderWrapper>

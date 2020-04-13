@@ -20,3 +20,7 @@ h1 {
 p {
   @apply leading-relaxed mb-2;
 }
+
+a {
+  @apply font-bold;
+}
