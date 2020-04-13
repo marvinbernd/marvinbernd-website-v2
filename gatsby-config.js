@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         name: "Über mich",
-        link: "/page-2",
+        link: "/about",
       },
       {
         name: "Kontakt",
@@ -72,6 +72,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-transition-link`,
     /* {
       resolve: `gatsby-plugin-typography`,
       options: {

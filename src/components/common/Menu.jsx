@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
@@ -34,9 +35,9 @@ const Menu = ({ menuLinks, showOffCanvas }) => (
                 `
           }
         >
-          <Link to={link.link} css={tw`text-3xl`}>
+          <AniLink paintDrip to={link.link} css={tw`text-3xl`}>
             {link.name}
-          </Link>
+          </AniLink>
         </Item>
       ))}
     </List>

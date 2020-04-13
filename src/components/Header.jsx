@@ -1,6 +1,7 @@
 import { React, Component } from "react"
 
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from "prop-types"
 import Container from "./common/Container"
 import Button from "./common/Button"
@@ -40,7 +41,9 @@ class Header extends Component {
       <HeaderWrapper>
         <NavBar>
           <NavBarLeft>
-            <Logo>{siteTitle}</Logo>
+            <AniLink paintDrip to="/">
+              <Logo>{siteTitle}</Logo>
+            </AniLink>
           </NavBarLeft>
 
           <NavBarRight>
