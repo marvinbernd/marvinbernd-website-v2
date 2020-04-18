@@ -18,9 +18,5 @@ h1 {
 }
 
 p {
-  @apply leading-relaxed mb-2;
-}
-
-a {
-  @apply font-bold;
+  @apply leading-relaxed mb-4;
 }

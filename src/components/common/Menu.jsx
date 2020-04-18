@@ -9,33 +9,18 @@ import tw from "twin.macro"
 const Nav = styled.nav``
 
 const List = styled.ul`
-  ${tw`flex items-center justify-between flex-wrap`}
+  ${tw`flex items-center flex-wrap`}
 `
 const Item = styled.li`
   ${tw`list-none`}
 `
 
 const Menu = ({ menuLinks, showOffCanvas }) => (
-  <Nav>
+  <Nav css={tw`-mx-4 py-2`}>
     <List>
       {menuLinks.map((link, index) => (
-        <Item
-          key={link.name}
-          css={
-            showOffCanvas
-              ? css`
-                  opacity: 1;
-                  transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
-                  transition: all 0.3s ease-in-out ${index * 100 + 300}ms;
-                `
-              : css`
-                  opacity: 0;
-                  transform: translate(0%, -50%) matrix(1, 0, 0, 1, 0, 0);
-                  transition: all 0.3s ease-in-out ${index * 100}ms;
-                `
-          }
-        >
-          <AniLink paintDrip to={link.link} css={tw`text-3xl`}>
+        <Item key={link.name}>
+          <AniLink paintDrip to={link.link} css={tw`text-gray px-4`}>
             {link.name}
           </AniLink>
         </Item>

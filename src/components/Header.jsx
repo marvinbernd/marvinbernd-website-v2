@@ -41,11 +41,10 @@ class Header extends Component {
       <HeaderWrapper>
         <NavBar>
           <NavBarLeft>
-            <AniLink paintDrip to="/">
+            <AniLink paintDrip bg="#663399" to="/">
               <Logo>{siteTitle}</Logo>
             </AniLink>
           </NavBarLeft>
-
           <NavBarRight>
             <MenuButton
               showOffCanvas={showOffCanvas}

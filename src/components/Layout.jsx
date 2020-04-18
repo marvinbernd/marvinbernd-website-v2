@@ -36,6 +36,7 @@ const Wrapper = styled.div`
 class Layout extends Component {
   state = {
     showOffCanvas: false,
+    isMenuBtnWhite: false,
   }
 
   handleMenuButtonClick = () => {

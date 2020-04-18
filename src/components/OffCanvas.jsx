@@ -2,6 +2,7 @@ import { React, Component } from "react"
 import { Link } from "gatsby"
 
 import Section from "../components/common/Section"
+import MainMenu from "./common/MainMenu"
 import Menu from "./common/Menu"
 
 import { css } from "@emotion/core"
@@ -13,6 +14,7 @@ const Wrapper = styled.div`
   height: 70%;
   top: -100%;
   transition: all 0.3s ease-in-out;
+  min-height: 400px;
 `
 
 const OffCanvas = ({ showOffCanvas, menuLinks }) => (
@@ -30,9 +32,44 @@ const OffCanvas = ({ showOffCanvas, menuLinks }) => (
     <Section css={tw`flex flex-col justify-between h-full`}>
       <div></div>
       <div>
-        <Menu menuLinks={menuLinks} showOffCanvas={showOffCanvas} />
+        <MainMenu menuLinks={menuLinks} showOffCanvas={showOffCanvas} />
       </div>
-      <div></div>
+      <div css={tw`flex justify-between`}>
+        <Menu
+          menuLinks={[
+            {
+              name: "hello@marvinbernd.de",
+              link: "mailto:hello@marvinbernd.de",
+            },
+            {
+              name: "+49 (0)152 060 49 110",
+              link: "mailto:hello@marvinbernd.de",
+            },
+          ]}
+        />
+        <div>
+          <Menu
+            menuLinks={[
+              {
+                name: "Blog",
+                link: "mailto:hello@marvinbernd.de",
+              },
+              {
+                name: "LinkedIn",
+                link: "mailto:hello@marvinbernd.de",
+              },
+              {
+                name: "Xing",
+                link: "mailto:hello@marvinbernd.de",
+              },
+              {
+                name: "Twitter",
+                link: "mailto:hello@marvinbernd.de",
+              },
+            ]}
+          />
+        </div>
+      </div>
     </Section>
   </Wrapper>
 )
