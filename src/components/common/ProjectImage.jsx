@@ -11,7 +11,7 @@ const ProjectImage = ({ pathContext, transitionStatus, image, color }) => {
   return (
     <Section
       className={transitionStatus}
-      css={css`${tw`flex flex-col justify-center p-8`} background-color: ${color}`}
+      css={css`${tw`flex flex-col justify-center p-8 pt-20 md:pt-8`} background-color: ${color}`}
     >
       <Img fluid={image || {} || [] || ""} />
       <TransitionLink

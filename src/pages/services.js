@@ -39,7 +39,7 @@ const ServicesPage = ({ data }) => (
           <div css={tw`grid grid-cols-2 gap-4`}>
             <div>
               <h2>Web Entwicklung</h2>
-              <p>
+              <p css={tw`text-sm`}>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua.
@@ -47,7 +47,7 @@ const ServicesPage = ({ data }) => (
             </div>
             <div>
               <h2>App Entwicklung</h2>
-              <p>
+              <p css={tw`text-sm`}>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua.
@@ -55,7 +55,7 @@ const ServicesPage = ({ data }) => (
             </div>
             <div>
               <h2>OnPage SEO</h2>
-              <p>
+              <p css={tw`text-sm`}>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua.
@@ -63,7 +63,7 @@ const ServicesPage = ({ data }) => (
             </div>
             <div>
               <h2>Newsletter Entwicklung</h2>
-              <p>
+              <p css={tw`text-sm`}>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua.

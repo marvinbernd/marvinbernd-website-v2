@@ -18,8 +18,10 @@ module.exports = {
     },
     inset: {
       "0": "0",
+      "2": "2px",
       auto: "auto",
       "1/2": "50%",
+      "-1/2": "-50%",
     },
     extend: {
       colors: {
@@ -32,6 +34,13 @@ module.exports = {
       spacing: {
         "96": "24rem",
         "128": "32rem",
+      },
+      height: {
+        "1/2": "50%",
+        "screen-1/2": "50vh",
+      },
+      width: {
+        "3px": "3px",
       },
     },
   },

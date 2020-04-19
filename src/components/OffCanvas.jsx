@@ -11,10 +11,12 @@ import tw from "twin.macro"
 
 const Wrapper = styled.div`
   ${tw`absolute w-full bg-white z-40`};
-  height: 70%;
+  height: 100vh;
   top: -100%;
   transition: all 0.3s ease-in-out;
-  min-height: 400px;
+  @media screen and (min-width: 1280px) {
+    height: 70vh;
+  }
 `
 
 const OffCanvas = ({ showOffCanvas, menuLinks }) => (
@@ -34,7 +36,7 @@ const OffCanvas = ({ showOffCanvas, menuLinks }) => (
       <div>
         <MainMenu menuLinks={menuLinks} showOffCanvas={showOffCanvas} />
       </div>
-      <div css={tw`flex justify-between`}>
+      <div css={tw`flex flex-col md:flex-row justify-between`}>
         <Menu
           menuLinks={[
             {

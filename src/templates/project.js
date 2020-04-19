@@ -39,7 +39,7 @@ export default function Template({
           image={image}
         />
         <Section
-          css={tw`flex flex-col justify-between pt-24 lg:pt-12`}
+          css={tw`flex flex-col justify-between pt-8 lg:pt-12`}
           className={transitionStatus}
         >
           <ProjectContent frontmatter={frontmatter} html={html} />

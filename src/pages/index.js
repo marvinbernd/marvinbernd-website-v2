@@ -36,9 +36,11 @@ const IndexPage = ({ data }) => {
             </p>
             <Link to="/page-2/">Mehr erfahren</Link>
           </div>
-          <Footer css={tw`self-end`} />
+          <div css={tw`hidden md:block`}>
+            <Footer />
+          </div>
         </Section>
-        <Section css={tw`flex flex-col justify-center p-0`}>
+        <Section css={tw`flex flex-col justify-center py-0 px-0 md:px-0`}>
           <ImageCarousel projects={projects} />
         </Section>
       </Grid>

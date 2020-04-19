@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@fullpage/react-fullpage": "^0.1.17",
     "@stackbit/gatsby-plugin-menus": "^0.0.4",
     "framer-motion": "^1.10.3",
     "gatsby": "^2.20.12",

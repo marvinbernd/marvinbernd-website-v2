@@ -12,7 +12,7 @@ import styled from "@emotion/styled"
 import tw from "twin.macro"
 
 const HeaderWrapper = styled.header`
-  ${tw`py-8 px-16 absolute w-full z-50`};
+  ${tw`py-8 px-8 md:px-16 absolute w-full z-50`};
 `
 const NavBar = styled.nav`
   ${tw`flex items-center justify-between flex-wrap`};

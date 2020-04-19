@@ -9,10 +9,10 @@ import tw from "twin.macro"
 const Nav = styled.nav``
 
 const List = styled.ul`
-  ${tw`flex items-center flex-wrap`}
+  ${tw`flex items-center flex-col md:flex-row md:flex-wrap`}
 `
 const Item = styled.li`
-  ${tw`list-none`}
+  ${tw`list-none mb-2 md:mb-0`}
 `
 
 const Menu = ({ menuLinks, showOffCanvas }) => (
