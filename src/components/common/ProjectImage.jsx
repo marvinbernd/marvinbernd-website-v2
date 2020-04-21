@@ -16,7 +16,7 @@ const ProjectImage = ({ pathContext, transitionStatus, image, color }) => {
       <Img fluid={image || {} || [] || ""} />
       <TransitionLink
         to={next.frontmatter.path}
-        css={tw`text-white absolute bottom-0 pb-4`}
+        css={tw`text-white absolute bottom-0 pb-4 hidden lg:block`}
       >
         <strong>Nächstes Projekt</strong>
         <br />

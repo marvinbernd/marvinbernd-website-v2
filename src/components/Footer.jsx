@@ -1,5 +1,5 @@
 import React from "react"
-import Menu from "./common/Menu"
+import FooterMenu from "./common/FooterMenu"
 
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
@@ -17,7 +17,7 @@ const FooterWrapper = styled.footer`
 
 const Footer = ({ siteTitle }) => (
   <FooterWrapper>
-    <Menu
+    <FooterMenu
       menuLinks={[
         {
           name: "Impressum",

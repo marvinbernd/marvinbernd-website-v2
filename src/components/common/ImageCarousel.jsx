@@ -89,11 +89,11 @@ class ImageCarousel extends Component {
               <div
                 css={tw`md:absolute md:left-0 md:bottom-0 md:p-8 text-white flex justify-between flex-wrap content-end w-full z-10`}
               >
-                <div>
+                <div css={tw`mb-4 md:mb-0`}>
                   <strong>{node.frontmatter.title} </strong> <br />
                   {node.frontmatter.subtitle}
                 </div>
-                <div css={tw`self-end`}>
+                <div css={tw`w-full md:w-auto self-end`}>
                   <AniLink
                     cover
                     bg={node.frontmatter.color}

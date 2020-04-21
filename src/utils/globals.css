@@ -14,7 +14,10 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl mb-4;
+  @apply text-2xl mb-4;
+  @media screen and (min-width: 768px) {
+    @apply text-4xl;
+  }
 }
 
 h2 {

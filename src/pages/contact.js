@@ -13,7 +13,7 @@ import Container from "../components/common/Container"
 import Grid from "../components/common/Grid"
 import ImageCarousel from "../components/common/ImageCarousel"
 
-const AboutPage = ({ data }) => (
+const ContactPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
@@ -30,7 +30,7 @@ const AboutPage = ({ data }) => (
       <Section css={tw`flex flex-col justify-between pt-24 lg:pt-12`}>
         <div></div>
         <div>
-          <h1>Über mich</h1>
+          <h1>Kontakt</h1>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -39,18 +39,13 @@ const AboutPage = ({ data }) => (
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
           </p>
           <p>
-            JAMstack Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua.
-          </p>
-          <p>
-            <strong>Kenntnisse</strong>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+            <a href="mailto:hello@marvinbernd.de" css={tw`font-bold`}>
+              hello@marvinbernd.de
+            </a>
+            <br />
+            <a href="tel:+4915206049110" css={tw`font-bold`}>
+              +49 (0)152 060 49 110
+            </a>
           </p>
         </div>
         <Footer css={tw`self-end`} />
@@ -59,7 +54,7 @@ const AboutPage = ({ data }) => (
   </Layout>
 )
 
-export default AboutPage
+export default ContactPage
 
 export const query = graphql`
   query {

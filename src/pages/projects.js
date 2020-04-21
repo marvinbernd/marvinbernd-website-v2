@@ -7,12 +7,12 @@ import SEO from "../components/common/SEO"
 import Grid from "../components/common/Grid"
 import Section from "../components/common/Section"
 import Img from "gatsby-image"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const FullpageSection = ({ subarray }) => {
   return subarray.map(function(project) {
-    console.log(project)
     return (
-      <div css={tw`h-screen-1/2`}>
+      <div css={tw`lg:h-screen-1/2`}>
         <Global
           styles={css`
             .fp-tableCell {
@@ -20,9 +20,9 @@ const FullpageSection = ({ subarray }) => {
             }
           `}
         />
-        <Grid css={tw`lg:grid-cols-2 h-full`}>
+        <Grid css={tw`lg:grid-cols-2 lg:h-screen-1/2 overflow-y-hidden`}>
           <Section
-            css={css`${tw`relative md:h-full p-8`} background-color: ${
+            css={css`${tw`relative lg:h-screen-1/2 px-8 py-4 flex items-center`} background-color: ${
               project.node.frontmatter.color
             }`}
           >
@@ -33,9 +33,30 @@ const FullpageSection = ({ subarray }) => {
                 [] ||
                 ""
               }
+              css={tw`w-full h-auto`}
             />
           </Section>
-          <Section>a</Section>
+          <Section css={tw`flex items-center`}>
+            <div>
+              <h1 css={tw`mb-0`}>{project.node.frontmatter.title}</h1>
+              <h2 css={tw`font-normal`}>{project.node.frontmatter.subtitle}</h2>
+              <p>
+                <strong>Jahr:</strong> {project.node.frontmatter.year}
+                <br />
+                <strong>Kunde:</strong> {project.node.frontmatter.client}
+              </p>
+              <p>
+                <AniLink
+                  cover
+                  bg={project.node.frontmatter.color}
+                  to={project.node.frontmatter.path}
+                  css={tw`font-bold`}
+                >
+                  Zum Projekt
+                </AniLink>
+              </p>
+            </div>
+          </Section>
         </Grid>
       </div>
     )
@@ -47,6 +68,7 @@ const Fullpage = ({ projectsArray }) => (
     //fullpage options
     licenseKey={"YOUR_KEY_HERE"}
     scrollingSpeed={1000} /* Options here */
+    responsiveWidth={768}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
@@ -106,7 +128,7 @@ export const query = graphql`
             color
             image {
               childImageSharp {
-                fluid(maxWidth: 1000, quality: 90) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

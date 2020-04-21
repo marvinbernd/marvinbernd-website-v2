@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         name: "Kontakt",
-        link: "/page-2",
+        link: "/contact",
       },
     ],
   },

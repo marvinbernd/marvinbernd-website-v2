@@ -18,7 +18,7 @@ const ServicesPage = ({ data }) => (
     <SEO title="Home" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
-      <Section css={tw`p-0`}>
+      <Section css={tw`md:p-0`}>
         <Img
           fixed={data.file.childImageSharp.fluid}
           objectFit="cover"

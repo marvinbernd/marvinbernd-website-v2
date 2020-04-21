@@ -19,7 +19,9 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
 
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
-        <Section css={tw`flex flex-col justify-between pt-24 lg:pt-12`}>
+        <Section
+          css={tw`flex flex-col justify-between pt-24 pb-12 lg:pt-12 lg:pb-8`}
+        >
           <div></div>
           <div>
             <h1>
