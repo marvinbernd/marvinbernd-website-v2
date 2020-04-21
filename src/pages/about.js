@@ -18,16 +18,16 @@ const AboutPage = ({ data }) => (
     <SEO title="Home" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
-      <Section css={tw`md:p-0`}>
+      <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
         <Img
           fixed={data.file.childImageSharp.fluid}
           objectFit="cover"
-          objectPosition="50% 50%"
+          objectPosition="50% 0%"
           alt=""
           css={tw`w-full h-full`}
         />
       </Section>
-      <Section css={tw`flex flex-col justify-between pt-24 lg:pt-12`}>
+      <Section css={tw`flex flex-col justify-between pt-12`}>
         <div></div>
         <div>
           <h1>Über mich</h1>

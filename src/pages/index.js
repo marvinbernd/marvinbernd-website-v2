@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
               dabei immer wichtig ein einzigartiges Produkt mit einer hohen
               Qualität und langfristiger Skalierbarkeit zu entwickeln.
             </p>
-            <Link to="/page-2/">Mehr erfahren</Link>
+            <Link to="/about/">Mehr erfahren</Link>
           </div>
           <div css={tw`hidden md:block`}>
             <Footer />
