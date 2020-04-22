@@ -2,22 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import tw from "twin.macro"
 
-import TransitionLink from "gatsby-plugin-transition-link"
-import { TransitionState } from "gatsby-plugin-transition-link"
-
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
-import Image from "../components/common/Image"
 import SEO from "../components/common/SEO"
 import Section from "../components/common/Section"
-import Container from "../components/common/Container"
 import Grid from "../components/common/Grid"
-import ImageCarousel from "../components/common/ImageCarousel"
 
 import ProjectImage from "../components/common/ProjectImage"
 import ProjectContent from "../components/common/ProjectContent"
-
-import { motion } from "framer-motion"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

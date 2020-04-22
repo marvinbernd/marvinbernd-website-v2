@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import tw from "twin.macro"
 

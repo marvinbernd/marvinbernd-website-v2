@@ -5,10 +5,9 @@ import tw from "twin.macro"
 
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
-import Image from "../components/common/Image"
 import SEO from "../components/common/SEO"
+import Button from "../components/common/Button"
 import Section from "../components/common/Section"
-import Container from "../components/common/Container"
 import Grid from "../components/common/Grid"
 import ImageCarousel from "../components/common/ImageCarousel"
 
@@ -24,9 +23,12 @@ const IndexPage = ({ data }) => {
         >
           <div></div>
           <div>
-            <h1>
-              Ich bin selbstständiger Web Designer &amp; Entwickler aus
-              Frankfurt, Deutschland.
+            <h1 css={tw`font-normal`}>
+              Ich bin selbstständiger
+              <br />
+              <strong>Frontend Web Developer</strong>
+              <br />
+              aus Frankfurt, Deutschland.
             </h1>
             <p>
               Design, Entwicklung und Beratung. Mit diesen drei Themen
@@ -36,7 +38,9 @@ const IndexPage = ({ data }) => {
               dabei immer wichtig ein einzigartiges Produkt mit einer hohen
               Qualität und langfristiger Skalierbarkeit zu entwickeln.
             </p>
-            <Link to="/about/">Mehr erfahren</Link>
+            <Link to="/about/">
+              <Button>Mehr erfahren</Button>
+            </Link>
           </div>
           <div css={tw`hidden md:block`}>
             <Footer />

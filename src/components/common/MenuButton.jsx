@@ -1,5 +1,5 @@
 import React from "react"
-import { Global, css } from "@emotion/core"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import tw from "twin.macro"
 

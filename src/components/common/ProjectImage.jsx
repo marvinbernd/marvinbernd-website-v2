@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
 import Section from "./Section"
 
 const ProjectImage = ({ pathContext, transitionStatus, image, color }) => {
-  const { next, prev } = pathContext
+  const { next } = pathContext
   return (
     <Section
       className={transitionStatus}

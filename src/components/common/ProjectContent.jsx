@@ -1,8 +1,5 @@
 import React from "react"
 import tw from "twin.macro"
-import TransitionLink from "gatsby-plugin-transition-link"
-import Image from "./Image"
-import Section from "./Section"
 
 const ProjectContent = ({ frontmatter, html }) => {
   return (

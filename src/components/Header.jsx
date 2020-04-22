@@ -1,13 +1,9 @@
 import { React, Component } from "react"
 
-import { Link } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from "prop-types"
-import Container from "./common/Container"
-import Button from "./common/Button"
 import MenuButton from "./common/MenuButton"
 
-import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import tw from "twin.macro"
 
@@ -25,12 +21,6 @@ const NavBarRight = styled.div`
 `
 const Logo = styled.span`
   ${tw`text-black font-semibold text-xl tracking-tight`};
-`
-const Menu = styled.div`
-  ${tw`text-sm lg:flex-grow`};
-`
-const MenuItem = styled(Link)`
-  ${tw`block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4`};
 `
 
 class Header extends Component {

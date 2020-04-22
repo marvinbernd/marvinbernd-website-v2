@@ -1,5 +1,4 @@
-import { React, Component } from "react"
-import { Link } from "gatsby"
+import { React } from "react"
 
 import Section from "../components/common/Section"
 import MainMenu from "./common/MainMenu"

@@ -1,7 +1,6 @@
 import React from "react"
 import FooterMenu from "./common/FooterMenu"
 
-import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import tw from "twin.macro"
 

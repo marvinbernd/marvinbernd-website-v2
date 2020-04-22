@@ -1,17 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 
 import tw from "twin.macro"
 
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
-import Image from "../components/common/Image"
 import SEO from "../components/common/SEO"
 import Section from "../components/common/Section"
-import Container from "../components/common/Container"
 import Grid from "../components/common/Grid"
-import ImageCarousel from "../components/common/ImageCarousel"
 
 const AboutPage = ({ data }) => (
   <Layout>

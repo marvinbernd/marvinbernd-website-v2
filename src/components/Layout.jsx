@@ -11,11 +11,9 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
-import tw from "twin.macro"
 
 import OffCanvas from "./OffCanvas"
 import Header from "./Header"
-import Footer from "./Footer"
 
 const Wrapper = styled.div`
   &::before {

@@ -1,10 +1,8 @@
 import { React, Component } from "react"
 import Slider from "react-slick"
-import Image from "./Image"
 import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Global, css } from "@emotion/core"
-import styled from "@emotion/styled"
 import tw from "twin.macro"
 
 import "slick-carousel/slick/slick.css"
