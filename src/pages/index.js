@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import tw from "twin.macro"
 
@@ -14,7 +13,7 @@ import ImageCarousel from "../components/common/ImageCarousel"
 const IndexPage = ({ data }) => {
   const { edges: projects } = data.allMarkdownRemark
   return (
-    <Layout>
+    <Layout pageId="index">
       <SEO title="Home" />
 
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
@@ -22,7 +21,7 @@ const IndexPage = ({ data }) => {
           css={tw`flex flex-col justify-between pt-24 pb-12 lg:pt-12 lg:pb-8`}
         >
           <div></div>
-          <div>
+          <div className="animated fadeInLeft">
             <h1 css={tw`font-normal`}>
               Ich bin selbstständiger
               <br />
@@ -38,9 +37,7 @@ const IndexPage = ({ data }) => {
               dabei immer wichtig ein einzigartiges Produkt mit einer hohen
               Qualität und langfristiger Skalierbarkeit zu entwickeln.
             </p>
-            <Link to="/about/">
-              <Button>Mehr erfahren</Button>
-            </Link>
+            <Button to="/about/">Mehr erfahren</Button>
           </div>
           <div css={tw`hidden md:block`}>
             <Footer />
@@ -58,7 +55,10 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 5
+    ) {
       edges {
         node {
           id

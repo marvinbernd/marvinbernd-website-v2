@@ -34,7 +34,12 @@ const MainMenu = ({ menuLinks, showOffCanvas }) => (
                 `
           }
         >
-          <AniLink paintDrip to={link.link} css={tw`text-3xl font-bold`}>
+          <AniLink
+            paintDrip
+            hex="#ffffff"
+            to={link.link}
+            css={tw`text-3xl font-bold`}
+          >
             {link.name}
           </AniLink>
         </Item>

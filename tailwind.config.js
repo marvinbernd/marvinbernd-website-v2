@@ -22,6 +22,7 @@ module.exports = {
       auto: "auto",
       "1/2": "50%",
       "-1/2": "-50%",
+      "-100": "-100%",
     },
     extend: {
       colors: {

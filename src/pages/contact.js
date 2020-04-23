@@ -1,8 +1,6 @@
 import React from "react"
 import Img from "gatsby-image/withIEPolyfill"
-
 import tw from "twin.macro"
-
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
 import SEO from "../components/common/SEO"
@@ -10,7 +8,7 @@ import Section from "../components/common/Section"
 import Grid from "../components/common/Grid"
 
 const ContactPage = ({ data }) => (
-  <Layout>
+  <Layout pageId="contact">
     <SEO title="Home" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
@@ -54,7 +52,7 @@ export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "marvin-bernd-profile@2x.jpg" }) {
+    file(relativePath: { eq: "contact3.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

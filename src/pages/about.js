@@ -10,7 +10,7 @@ import Section from "../components/common/Section"
 import Grid from "../components/common/Grid"
 
 const AboutPage = ({ data }) => (
-  <Layout>
+  <Layout pageId="about">
     <SEO title="Home" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>

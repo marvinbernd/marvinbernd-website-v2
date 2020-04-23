@@ -102,7 +102,7 @@ const ProjectsPage = ({ data }) => {
   const projectsArray = chunkArray(projects, 2)
 
   return (
-    <Layout>
+    <Layout pageId="projects">
       <SEO title="Home" />
       <Fullpage projectsArray={projectsArray} />
     </Layout>

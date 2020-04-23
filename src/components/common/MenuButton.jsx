@@ -9,7 +9,10 @@ const Button = styled.button`
   ${tw`flex items-center p-0 text-black`};
 `
 const HamburgerInner = styled.span`
-  ${tw`rounded-none`};
+  ${tw`bg-black rounded-none`};
+  &.white {
+    ${tw`lg:bg-white`}
+  }
   &::before,
   &::after {
     background: inherit;
@@ -17,7 +20,7 @@ const HamburgerInner = styled.span`
   }
 `
 
-const MenuButton = ({ showOffCanvas, onMenuButtonClick }) => (
+const MenuButton = ({ showOffCanvas, onMenuButtonClick, pageId }) => (
   <Button onClick={() => onMenuButtonClick()}>
     <button
       className={
@@ -32,7 +35,11 @@ const MenuButton = ({ showOffCanvas, onMenuButtonClick }) => (
       `}
     >
       <span className="hamburger-box">
-        <HamburgerInner className="hamburger-inner"></HamburgerInner>
+        <HamburgerInner
+          className={
+            pageId === "index" ? "hamburger-inner white" : "hamburger-inner"
+          }
+        ></HamburgerInner>
       </span>
     </button>
   </Button>

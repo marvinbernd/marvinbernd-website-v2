@@ -20,25 +20,31 @@ const NavBarRight = styled.div`
   ${tw`w-full block flex-shrink-0 flex items-center w-auto`};
 `
 const Logo = styled.span`
-  ${tw`text-black font-semibold text-xl tracking-tight`};
+  ${tw`text-white font-semibold text-xl tracking-tight`};
+  &.black {
+    ${tw`text-black`}
+  }
 `
 
 class Header extends Component {
   state = {}
   render() {
-    const { siteTitle, showOffCanvas, onMenuButtonClick } = this.props
+    const { siteTitle, showOffCanvas, onMenuButtonClick, pageId } = this.props
     return (
       <HeaderWrapper>
         <NavBar>
           <NavBarLeft>
-            <AniLink paintDrip bg="#663399" to="/">
-              <Logo>{siteTitle}</Logo>
+            <AniLink paintDrip hex="#ffffff" to="/">
+              <Logo className={pageId === "index" ? "black" : null}>
+                {siteTitle}
+              </Logo>
             </AniLink>
           </NavBarLeft>
           <NavBarRight>
             <MenuButton
               showOffCanvas={showOffCanvas}
               onMenuButtonClick={onMenuButtonClick}
+              pageId={pageId}
             />
           </NavBarRight>
         </NavBar>

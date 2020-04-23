@@ -43,7 +43,7 @@ class Layout extends Component {
     })
   }
   render() {
-    const { children } = this.props
+    const { children, pageId } = this.props
     const { showOffCanvas } = this.state
     return (
       <StaticQuery
@@ -89,6 +89,7 @@ class Layout extends Component {
               siteTitle={data.site.siteMetadata.title}
               showOffCanvas={showOffCanvas}
               onMenuButtonClick={this.handleMenuButtonClick}
+              pageId={pageId}
             />
             <main>{children}</main>
           </Wrapper>
