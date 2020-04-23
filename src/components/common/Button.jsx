@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import tw from "twin.macro"
 import Arrow from "../../assets/icons/arrow.svg"
 
-const ButtonWrapper = styled(AniLink)`
+const ButtonWrapper = styled.span`
   ${tw`inline-flex items-center font-bold overflow-hidden`};
 
   .animatedArrow {
@@ -41,8 +41,8 @@ const ButtonWrapper = styled(AniLink)`
   }
 `
 
-const Button = ({ children, to }) => (
-  <ButtonWrapper to={to} paintDrip hex="#ffffff">
+const Button = ({ children }) => (
+  <ButtonWrapper>
     {children}
     <div css={tw`relative overflow-hidden`}>
       <Arrow className="animatedArrow" css={tw`ml-2`} />

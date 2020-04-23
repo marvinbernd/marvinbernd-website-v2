@@ -34,36 +34,32 @@ const ServicesPage = ({ data }) => (
               <WebDevelopment css={tw`h-24 max-w-full mb-4`} />
               <h2>Web Entwicklung</h2>
               <p css={tw`text-sm`}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                Von der Konzeption bis zur Optimierung. Ich helfe Ihnen bei der
+                Umsetzung von modernen Webseiten und Anwendungen.
               </p>
             </div>
             <div>
               <Ecommerce css={tw`h-24 max-w-full mb-4`} />
-              <h2>App Entwicklung</h2>
+              <h2>Online-Shops</h2>
               <p css={tw`text-sm`}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                Mein Ziel ist es eine skalierbare Lösung zu entwickeln, die mit
+                den Ansprüchen Ihrer Kunden mitwächst.
               </p>
             </div>
             <div>
               <OnpageSEO css={tw`h-24 max-w-full mb-4`} />
               <h2>OnPage SEO</h2>
               <p css={tw`text-sm`}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                Eine optimale Darstellung Ihrer Inhalte in Suchmaschinen ist ein
+                Grundfaktor für den Erfolg Ihrer Website.
               </p>
             </div>
             <div>
               <NewsletterDevelopment css={tw`h-24 max-w-full mb-4`} />
               <h2>Newsletter Entwicklung</h2>
               <p css={tw`text-sm`}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                Ich programmiere responsive Newsletter für Ihre Kampagnen,
+                welche auf allen Geräten optimal dargestellt werden.
               </p>
             </div>
           </div>

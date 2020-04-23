@@ -8,6 +8,7 @@ import Grid from "../components/common/Grid"
 import Section from "../components/common/Section"
 import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Button from "../components/common/Button"
 
 const FullpageSection = ({ subarray }) => {
   return subarray.map(function(project) {
@@ -52,7 +53,7 @@ const FullpageSection = ({ subarray }) => {
                   to={project.node.frontmatter.path}
                   css={tw`font-bold`}
                 >
-                  Zum Projekt
+                  <Button>Zum Projekt</Button>
                 </AniLink>
               </p>
             </div>

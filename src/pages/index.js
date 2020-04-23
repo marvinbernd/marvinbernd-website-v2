@@ -9,6 +9,7 @@ import Button from "../components/common/Button"
 import Section from "../components/common/Section"
 import Grid from "../components/common/Grid"
 import ImageCarousel from "../components/common/ImageCarousel"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const IndexPage = ({ data }) => {
   const { edges: projects } = data.allMarkdownRemark
@@ -37,7 +38,9 @@ const IndexPage = ({ data }) => {
               dabei immer wichtig ein einzigartiges Produkt mit einer hohen
               Qualität und langfristiger Skalierbarkeit zu entwickeln.
             </p>
-            <Button to="/about/">Mehr erfahren</Button>
+            <AniLink to="/about/" paintDrip hex="#ffffff">
+              <Button>Mehr erfahren</Button>
+            </AniLink>
           </div>
           <div css={tw`hidden md:block`}>
             <Footer />

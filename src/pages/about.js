@@ -8,6 +8,7 @@ import Footer from "../components/Footer"
 import SEO from "../components/common/SEO"
 import Section from "../components/common/Section"
 import Grid from "../components/common/Grid"
+import CSSDA from "../components/common/CSSDA"
 
 const AboutPage = ({ data }) => (
   <Layout pageId="about">
@@ -28,26 +29,46 @@ const AboutPage = ({ data }) => (
         <div>
           <h1>Über mich</h1>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+            Seit 2015 arbeite ich als selbstständiger Web Designer & Entwickler.
+            Dabei unterstütze ich Agenturen und KMUs bei der Planung und
+            Umsetzung von modernen Webseiten und Online-Shops. Dabei hat jedes
+            Projekt verschiedene Anforderungen und benötigt einen einzigartigen
+            Lösungsansatz.
           </p>
           <p>
-            JAMstack Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua.
+            Seit längerem beschäftige ich mich daher mit der{" "}
+            <a href="#" css={tw`underline`}>
+              Jamstack Entwicklung
+            </a>
+            . Dadurch kann ich ein individuelles Produkt anbieten, welches nicht
+            an vordefinierte Systeme gebunden ist.
           </p>
-          <p>
-            <strong>Kenntnisse</strong>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
-          </p>
+          <h2>Kenntnisse</h2>
+          <div css={tw`grid grid-cols-3 gap-4`}>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Sass)</li>
+              <li>JavaScript (ES6)</li>
+              <li>React.js</li>
+              <li>PHP</li>
+            </ul>
+            <ul>
+              <li>APIs (REST)</li>
+              <li>Gatsby.js</li>
+              <li>Next.js</li>
+              <li>Jekyll</li>
+              <li>Hugo</li>
+            </ul>
+            <ul>
+              <li>Kirby</li>
+              <li>WordPress</li>
+              <li>Contao</li>
+              <li>Shopware</li>
+              <li>Shopify</li>
+            </ul>
+          </div>
+          <h2 css={tw`mt-4`}>Awards</h2>
+          <CSSDA />
         </div>
         <Footer css={tw`self-end`} />
       </Section>
