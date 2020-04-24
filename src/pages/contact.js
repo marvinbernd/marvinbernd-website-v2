@@ -31,13 +31,11 @@ const ContactPage = ({ data }) => (
             Gerne berate ich Sie bei der Planung Ihres nächsten Web-Projektes.
           </p>
           <p>
-            <a href="mailto:hello@marvinbernd.de" css={tw`font-bold`}>
-              hello@marvinbernd.de
-            </a>
+            <strong>Email: </strong>
+            <a href="mailto:hello@marvinbernd.de">hello@marvinbernd.de</a>
             <br />
-            <a href="tel:+4915206049110" css={tw`font-bold`}>
-              +49 (0)152 060 49 110
-            </a>
+            <strong>Telefon: </strong>
+            <a href="tel:+4915206049110">+49 152 060 49 110</a>
           </p>
         </div>
         <Footer css={tw`self-end`} />

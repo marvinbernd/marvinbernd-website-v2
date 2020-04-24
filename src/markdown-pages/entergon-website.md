@@ -1,9 +1,9 @@
 ---
 path: "/projekte/entergon-website"
-date: "2019-05-04"
+date: "2020-04-22"
 title: "entergon Website"
 subtitle: "WordPress Programmierung & SEO"
-year: "2019"
+year: "2020"
 client: "entergon GmbH & Co. KG"
 image: "./entergon-website.png"
 color: "#93C252"

@@ -1,9 +1,9 @@
 ---
 path: "/projekte/whiteoff-website"
-date: "2019-05-04"
+date: "2020-04-19"
 title: "White off/ Website"
 subtitle: "WordPress Programmierung"
-year: "2018"
+year: "2019"
 client: "White off/"
 image: "./whiteoff-website.png"
 color: "#674172"

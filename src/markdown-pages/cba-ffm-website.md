@@ -1,6 +1,6 @@
 ---
 path: "/projekte/cba-ffm-website"
-date: "2019-05-04"
+date: "2020-04-23"
 title: "Christl+Bruchhäuser Website"
 subtitle: "Webdesign & WordPress Programmierung"
 year: "2020"

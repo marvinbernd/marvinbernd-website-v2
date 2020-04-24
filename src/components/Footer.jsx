@@ -20,11 +20,11 @@ const Footer = ({ siteTitle }) => (
       menuLinks={[
         {
           name: "Impressum",
-          link: "mailto:hello@marvinbernd.de",
+          link: "imprint",
         },
         {
           name: "Datenschutz",
-          link: "mailto:hello@marvinbernd.de",
+          link: "privacy",
         },
       ]}
     />

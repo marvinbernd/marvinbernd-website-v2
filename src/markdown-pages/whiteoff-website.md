@@ -1,9 +1,9 @@
 ---
 path: "/projekte/wailua-website"
-date: "2019-05-04"
+date: "2020-04-20"
 title: "Wailua Website"
 subtitle: "Webdesign, Programmierung & SEO"
-year: "2018"
+year: "2019"
 client: "wailua e.K."
 image: "./wailua-website.png"
 color: "#eb9532"

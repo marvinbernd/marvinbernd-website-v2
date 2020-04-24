@@ -1,11 +1,11 @@
 ---
-path: "/projekte/floed-website"
-date: "2019-05-04"
-title: "floed Website"
-subtitle: "WordPress Programmierung & SEO"
-year: "2020"
-client: "floed"
-image: "./floed-website.png"
+path: "/projekte/111-medien-service-website"
+date: "2020-04-18"
+title: "111 Medien Service Website"
+subtitle: "Webdesign & WordPress Programmierung"
+year: "2019"
+client: "111 Medien Service GmbH"
+image: "./111-medien-service-website.png"
 color: "#22313f"
 ---
 

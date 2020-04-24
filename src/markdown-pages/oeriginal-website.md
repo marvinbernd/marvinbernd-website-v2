@@ -1,9 +1,9 @@
 ---
 path: "/projekte/oeriginal-website"
-date: "2019-05-04"
+date: "2020-04-21"
 title: "Oeriginal Website"
 subtitle: "WordPress Programmierung"
-year: "2018"
+year: "2019"
 client: "Oeriginal Marke & Kommunikation"
 image: "./oeriginal-website.png"
 color: "#6c7a89"
