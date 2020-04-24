@@ -31,23 +31,25 @@ const IndexPage = ({ data }) => {
               aus Frankfurt, Deutschland.
             </h1>
             <p>
-              Design, Entwicklung und Beratung. Mit diesen drei Themen
-              unterstütze ich seit mehreren Jahren Firmen und Agenturen bei der
-              Umsetzung von Web-Projekten. Von Newsletter-Kampagnen bis hin zu
-              mehrsprachigen Online-Shops. Egal welcher Projektumfang, mir ist
-              dabei immer wichtig ein einzigartiges Produkt mit einer hohen
-              Qualität und langfristiger Skalierbarkeit zu entwickeln.
+              Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der
+              Umsetzung von modernen Web-Projekten. Von Newsletter-Kampagnen bis
+              hin zu mehrsprachigen Online-Shops. Egal welcher Projektumfang,
+              mir ist dabei immer wichtig ein einzigartiges Produkt mit einer
+              hohen Qualität und langfristiger Skalierbarkeit zu entwickeln.
             </p>
             <AniLink to="/about/" paintDrip hex="#ffffff">
               <Button>Mehr erfahren</Button>
             </AniLink>
           </div>
-          <div css={tw`hidden md:block`}>
+          <div css={tw`hidden lg:block`}>
             <Footer />
           </div>
         </Section>
         <Section css={tw`flex flex-col justify-center py-0 px-0 md:px-0`}>
           <ImageCarousel projects={projects} />
+        </Section>
+        <Section css={tw`lg:hidden`}>
+          <Footer />
         </Section>
       </Grid>
     </Layout>

@@ -10,7 +10,7 @@ import tw from "twin.macro"
 
 const Wrapper = styled.div`
   ${tw`absolute w-full bg-white z-40`};
-  height: 100vh;
+  height: 90vh;
   top: -100%;
   transition: all 0.3s ease-in-out;
   @media screen and (min-width: 1280px) {
@@ -31,7 +31,7 @@ const OffCanvas = ({ showOffCanvas, menuLinks }) => (
     }
   >
     <Section css={tw`flex flex-col justify-between h-full`}>
-      <div></div>
+      <div css={tw`h-16`}></div>
       <div>
         <MainMenu menuLinks={menuLinks} showOffCanvas={showOffCanvas} />
       </div>

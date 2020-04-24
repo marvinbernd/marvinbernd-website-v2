@@ -4,6 +4,7 @@ import { Global, css } from "@emotion/core"
 import tw from "twin.macro"
 import Layout from "../components/Layout"
 import SEO from "../components/common/SEO"
+import Footer from "../components/Footer"
 import Grid from "../components/common/Grid"
 import Section from "../components/common/Section"
 import Img from "gatsby-image"
@@ -11,7 +12,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Button from "../components/common/Button"
 
 const FullpageSection = ({ subarray }) => {
-  return subarray.map(function(project) {
+  return subarray.map(function(project, index) {
     return (
       <div css={tw`lg:h-screen-1/2`}>
         <Global
@@ -23,9 +24,15 @@ const FullpageSection = ({ subarray }) => {
         />
         <Grid css={tw`lg:grid-cols-2 lg:h-screen-1/2 overflow-y-hidden`}>
           <Section
-            css={css`${tw`relative lg:h-screen-1/2 px-8 py-4 flex items-center`} background-color: ${
-              project.node.frontmatter.color
-            }`}
+            css={
+              index === 0
+                ? css`${tw`relative lg:h-screen-1/2 px-8 py-4 pt-16 lg:pt-4 flex items-center`} background-color: ${
+                    project.node.frontmatter.color
+                  }`
+                : css`${tw`relative lg:h-screen-1/2 px-8 py-4 flex items-center`} background-color: ${
+                    project.node.frontmatter.color
+                  }`
+            }
           >
             <Img
               fluid={
@@ -69,7 +76,7 @@ const Fullpage = ({ projectsArray }) => (
     //fullpage options
     licenseKey={"YOUR_KEY_HERE"}
     scrollingSpeed={1000} /* Options here */
-    responsiveWidth={768}
+    responsiveWidth={1024}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
@@ -106,6 +113,9 @@ const ProjectsPage = ({ data }) => {
     <Layout pageId="projects">
       <SEO title="Home" />
       <Fullpage projectsArray={projectsArray} />
+      <Section css={tw`lg:fixed left-1/2 bottom-0`}>
+        <Footer />
+      </Section>
     </Layout>
   )
 }
