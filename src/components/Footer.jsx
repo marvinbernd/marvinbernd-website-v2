@@ -20,11 +20,11 @@ const Footer = ({ siteTitle }) => (
       menuLinks={[
         {
           name: "Impressum",
-          link: "imprint",
+          link: "impressum",
         },
         {
           name: "Datenschutz",
-          link: "privacy",
+          link: "datenschutz",
         },
       ]}
     />

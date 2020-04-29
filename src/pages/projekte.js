@@ -1,6 +1,7 @@
 import React from "react"
 import ReactFullpage from "@fullpage/react-fullpage"
 import { Global, css } from "@emotion/core"
+// import styled from "@emotion/styled"
 import tw from "twin.macro"
 import Layout from "../components/Layout"
 import SEO from "../components/common/SEO"
@@ -10,6 +11,42 @@ import Section from "../components/common/Section"
 import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Button from "../components/common/Button"
+
+/* const MoreProjects = styled.span`
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+`
+
+const AnimatedLine = styled.span`
+  display: block;
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  top: 5px;
+  right: -1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #000;
+    transform: translateY(-100%);
+    animation: animatedLine 2s linear infinite;
+  }
+
+  @keyframes animatedLine {
+    0% { transform: translateY(-100%) }
+    100% { transform: translateY(100%) }
+  }
+` */
 
 const FullpageSection = ({ subarray }) => {
   return subarray.map(function(project, index) {
@@ -74,7 +111,7 @@ const FullpageSection = ({ subarray }) => {
 const Fullpage = ({ projectsArray }) => (
   <ReactFullpage
     //fullpage options
-    licenseKey={"YOUR_KEY_HERE"}
+    licenseKey={"315633C4-FDAB4EFA-BBBFAFC7-CB4E9D7D"}
     scrollingSpeed={1000} /* Options here */
     responsiveWidth={1024}
     render={({ state, fullpageApi }) => {
@@ -113,8 +150,9 @@ const ProjectsPage = ({ data }) => {
     <Layout pageId="projects">
       <SEO title="Home" />
       <Fullpage projectsArray={projectsArray} />
-      <Section css={tw`lg:fixed left-1/2 bottom-0`}>
+      <Section css={tw`lg:fixed left-1/2 bottom-0 lg:w-1/2`}>
         <Footer />
+        {/*<MoreProjects>Weitere Projekte<AnimatedLine /></MoreProjects>*/}      
       </Section>
     </Layout>
   )

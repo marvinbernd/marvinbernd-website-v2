@@ -10,19 +10,19 @@ module.exports = {
       },
       {
         name: "Projekte",
-        link: "/projects",
+        link: "/projekte",
       },
       {
         name: "Leistungen",
-        link: "/services",
+        link: "/leistungen",
       },
       {
         name: "Über mich",
-        link: "/about",
+        link: "/uerber-mich",
       },
       {
         name: "Kontakt",
-        link: "/contact",
+        link: "/kontakt",
       },
     ],
   },

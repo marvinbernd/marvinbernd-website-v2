@@ -1,5 +1,4 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styled from "@emotion/styled"
 import tw from "twin.macro"
 import Arrow from "../../assets/icons/arrow.svg"

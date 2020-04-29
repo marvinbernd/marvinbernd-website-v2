@@ -21,7 +21,7 @@ class ImageCarousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       vertical: false,
-      autoplay: false,
+      autoplay: true,
       fade: true,
       cssEase: "linear",
       mobileFirst: true,

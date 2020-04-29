@@ -9,4 +9,6 @@ image: "./cba-ffm-website.png"
 color: "#031761"
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+Für das Architekturbüro Christl+Bruchhäuser in Frankfurt wurde ein Relaunch der Website durchgeführt. Damit die Mitarbeiter selbst Inhalte ändern können und neue Projekte hinzufügen können, wurde das Content-Management-System WordPress verwendet.
+
+Der Aufbau der Website fokussiert sich vor allem auf die Darstellung der Gebäude mit vielen hochauflösenden Bildern. Durch eine Unterteilung in die einzelnen Kategorien, können sich Interessenten schnell einen Überblick über die Projekte verschaffen.

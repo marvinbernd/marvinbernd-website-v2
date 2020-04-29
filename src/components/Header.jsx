@@ -35,7 +35,7 @@ class Header extends Component {
         <NavBar>
           <NavBarLeft>
             <AniLink paintDrip hex="#ffffff" to="/">
-              <Logo className={pageId === "index" ? "black" : null}>
+              <Logo className={pageId === "index" || pageId === "imprint" || pageId === "privacy" ? "black" : null}>
                 {siteTitle}
               </Logo>
             </AniLink>

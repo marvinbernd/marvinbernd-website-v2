@@ -12,7 +12,7 @@ import CSSDA from "../components/common/CSSDA"
 
 const AboutPage = ({ data }) => (
   <Layout pageId="about">
-    <SEO title="Home" />
+    <SEO title="Über mich" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
       <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
@@ -26,7 +26,7 @@ const AboutPage = ({ data }) => (
       </Section>
       <Section css={tw`flex flex-col justify-between pt-12`}>
         <div></div>
-        <div>
+        <div css={tw`mb-8 lg:mb-0`}>
           <h1>Über mich</h1>
           <p>
             Seit 2015 arbeite ich als selbstständiger Web Designer & Entwickler.
@@ -37,7 +37,7 @@ const AboutPage = ({ data }) => (
           </p>
           <p>
             Seit längerem beschäftige ich mich daher mit der{" "}
-            <a href="#" css={tw`underline`}>
+            <a href="https://jamstack.org/" target="_blank" rel="noopener noreferrer" css={tw`underline`}>
               Jamstack Entwicklung
             </a>
             . Dadurch kann ich ein individuelles Produkt anbieten, welches nicht

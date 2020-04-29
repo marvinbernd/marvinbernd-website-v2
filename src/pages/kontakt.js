@@ -12,7 +12,7 @@ const ContactPage = ({ data }) => (
     <SEO title="Home" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
-      <Section css={tw`md:p-0`}>
+      <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
         <Img
           fixed={data.file.childImageSharp.fluid}
           objectFit="cover"
@@ -21,12 +21,12 @@ const ContactPage = ({ data }) => (
           css={tw`w-full h-full`}
         />
       </Section>
-      <Section css={tw`flex flex-col justify-between pt-24 lg:pt-12`}>
+      <Section css={tw`flex flex-col justify-between pt-12`}>
         <div></div>
-        <div>
+        <div css={tw`mb-8 lg:mb-0`}>
           <h1>Kontakt</h1>
           <p>
-            Haben Sie eine Projektidee oder bereits konkrete Anforderungen?
+            Haben Sie eine Projektidee oder bereits eine konkrete Anfrage?
             <br />
             Gerne berate ich Sie bei der Planung Ihres nächsten Web-Projektes.
           </p>

@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image/withIEPolyfill"
 import tw from "twin.macro"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"

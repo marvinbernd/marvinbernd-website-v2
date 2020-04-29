@@ -35,9 +35,9 @@ const IndexPage = ({ data }) => {
               Umsetzung von modernen Web-Projekten. Von Newsletter-Kampagnen bis
               hin zu mehrsprachigen Online-Shops. Egal welcher Projektumfang,
               mir ist dabei immer wichtig ein einzigartiges Produkt mit einer
-              hohen Qualität und langfristiger Skalierbarkeit zu entwickeln.
+              hohen Qualität und einfachen Skalierbarkeit zu entwickeln.
             </p>
-            <AniLink to="/about/" paintDrip hex="#ffffff">
+            <AniLink to="/ueber-mich/" paintDrip hex="#ffffff">
               <Button>Mehr erfahren</Button>
             </AniLink>
           </div>
