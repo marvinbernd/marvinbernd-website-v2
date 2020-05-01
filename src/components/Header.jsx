@@ -20,7 +20,7 @@ const NavBarRight = styled.div`
   ${tw`w-full block flex-shrink-0 flex items-center w-auto`};
 `
 const Logo = styled.span`
-  ${tw`text-white font-semibold text-xl tracking-tight`};
+  ${tw`text-white font-semibold text-xl tracking-tight transition duration-300 ease-in-out`};
   &.black {
     ${tw`text-black`}
   }
@@ -35,7 +35,16 @@ class Header extends Component {
         <NavBar>
           <NavBarLeft>
             <AniLink paintDrip hex="#ffffff" to="/">
-              <Logo className={pageId === "index" || pageId === "imprint" || pageId === "privacy" ? "black" : null}>
+              <Logo
+                className={
+                  showOffCanvas ||
+                  pageId === "index" ||
+                  pageId === "imprint" ||
+                  pageId === "privacy"
+                    ? "black"
+                    : null
+                }
+              >
                 marvin bernd
               </Logo>
             </AniLink>

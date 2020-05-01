@@ -32,7 +32,7 @@ const ServicesPage = ({ data }) => (
         <div></div>
         <div>
           <h1>Leistungen</h1>
-          <div css={tw`grid grid-cols-2 gap-4`}>
+          <div css={tw`grid md:grid-cols-2 gap-4`}>
             <div>
               <WebDevelopment css={tw`h-24 max-w-full mb-4`} />
               <h2>Web Entwicklung</h2>
