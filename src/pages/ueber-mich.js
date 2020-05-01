@@ -52,7 +52,7 @@ const AboutPage = ({ data }) => (
               <li>PHP</li>
             </ul>
             <ul>
-              <li>APIs (REST)</li>
+              <li>REST APIs</li>
               <li>Gatsby.js</li>
               <li>Next.js</li>
               <li>Jekyll</li>
