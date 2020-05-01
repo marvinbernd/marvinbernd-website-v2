@@ -6,6 +6,8 @@ import Footer from "../components/Footer"
 import SEO from "../components/common/SEO"
 import Section from "../components/common/Section"
 import Grid from "../components/common/Grid"
+import Button from "../components/common/Button"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const NotFoundPage = ({ data }) => (
   <Layout pageId="404">
@@ -24,19 +26,13 @@ const NotFoundPage = ({ data }) => (
       <Section css={tw`flex flex-col justify-between pt-12`}>
         <div></div>
         <div css={tw`mb-8 lg:mb-0`}>
-          <h1>Kontakt</h1>
+          <h1>404</h1>
           <p>
-            Haben Sie eine Projektidee oder bereits eine konkrete Anfrage?
-            <br />
-            Gerne berate ich Sie bei der Planung Ihres nächsten Web-Projektes.
+            Leider wurde die gewünschte Seite nicht gefunden.
           </p>
-          <p>
-            <strong>Email: </strong>
-            <a href="mailto:hello@marvinbernd.de">hello@marvinbernd.de</a>
-            <br />
-            <strong>Telefon: </strong>
-            <a href="tel:+4915206049110">+49 152 060 49 110</a>
-          </p>
+          <AniLink to="/" paintDrip hex="#ffffff">
+              <Button>Zur Startseite</Button>
+          </AniLink>
         </div>
         <Footer css={tw`self-end`} />
       </Section>
@@ -48,7 +44,7 @@ export default NotFoundPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "contact3.jpg" }) {
+    file(relativePath: { eq: "404.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
