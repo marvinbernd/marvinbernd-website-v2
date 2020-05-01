@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Frontend Web Developer | Frankfurt`,
+    title: `Marvin Bernd | Frontend Web Developer | Frankfurt`,
     description: `Ich bin selbständiger Frontend Web Developer aus Frankfurt. Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der Umsetzung von modernen Web-Projekten.`,
     author: `@marvinbernd`,
     menuLinks: [
@@ -28,6 +28,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

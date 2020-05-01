@@ -17,7 +17,7 @@ const AnimatedLine = styled.span`
   background-color: rgba(255, 255, 255, 0.5);
   overflow: hidden;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     height: 100%;
@@ -28,19 +28,23 @@ const AnimatedLine = styled.span`
   }
 
   @keyframes animatedLine {
-    0% { transform: translateY(-100%) }
-    100% { transform: translateY(100%) }
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
   }
 `
 
-const ProjectImage = ({ pathContext, transitionStatus, image, color }) => {
+const ProjectImage = ({ pathContext, transitionStatus, image, color, alt }) => {
   const { next } = pathContext
   return (
     <Section
       className={transitionStatus}
       css={css`${tw`flex flex-col justify-center p-8 pt-20 md:pt-8`} background-color: ${color}`}
     >
-      <Img fluid={image || {} || [] || ""} />
+      <Img fluid={image || {} || [] || ""} alt={alt} />
       <TransitionLink
         to={next.frontmatter.path}
         css={tw`text-white absolute bottom-0 pb-4 hidden lg:block`}

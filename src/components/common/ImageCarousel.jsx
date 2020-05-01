@@ -73,6 +73,7 @@ class ImageCarousel extends Component {
                 fluid={
                   node.frontmatter.image.childImageSharp.fluid || {} || [] || ""
                 }
+                alt={node.frontmatter.title + " | " + node.frontmatter.subtitle}
               />
               <div
                 css={tw`lg:absolute lg:left-0 lg:bottom-0 lg:p-8 text-white flex justify-between flex-wrap content-end w-full z-10`}

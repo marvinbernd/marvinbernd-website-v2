@@ -13,7 +13,10 @@ const IndexPage = ({ data }) => {
   const { edges: projects } = data.allMarkdownRemark
   return (
     <Layout pageId="index">
-      <SEO title="Marvin Bernd" />
+      <SEO
+        title="Marvin Bernd | Frontend Web Developer | Frankfurt"
+        description="Ich bin selbständiger Frontend Web Developer aus Frankfurt. Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der Umsetzung von modernen Web-Projekten."
+      />
 
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
         <Section

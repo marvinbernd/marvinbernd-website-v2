@@ -13,7 +13,10 @@ import NewsletterDevelopment from "../assets/icons/newsletter-development.svg"
 
 const ServicesPage = ({ data }) => (
   <Layout pageId="services">
-    <SEO title="Leistungen" description="Meine Leistungen: Web Entwicklung, Web Design, Online-Shops, OnPage SEO & Newsletter Entwicklung." />
+    <SEO
+      title="Leistungen | Frontend Web Developer | Frankfurt"
+      description="Meine Leistungen: Web Entwicklung, Webdesign, Online-Shops, OnPage SEO & Newsletter Entwicklung."
+    />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
       <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
@@ -21,7 +24,7 @@ const ServicesPage = ({ data }) => (
           fixed={data.file.childImageSharp.fluid}
           objectFit="cover"
           objectPosition="50% 50%"
-          alt=""
+          alt="Web Entwicklung & Webdesign"
           css={tw`w-full h-full`}
         />
       </Section>

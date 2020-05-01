@@ -78,6 +78,11 @@ const FullpageSection = ({ subarray }) => {
                 [] ||
                 ""
               }
+              alt={
+                project.node.frontmatter.title +
+                " | " +
+                project.node.frontmatter.subtitle
+              }
               css={tw`w-full h-auto`}
             />
           </Section>
@@ -148,11 +153,14 @@ const ProjectsPage = ({ data }) => {
 
   return (
     <Layout pageId="projects">
-      <SEO title="Projekte" description="Website & Online-Shops Projekte mit JavaScript, React, PHP, WordPress, Shopify & Contao." />
+      <SEO
+        title="Projekte | Frontend Web Developer | Frankfurt"
+        description="Website & Online-Shops Projekte mit JavaScript, React, PHP, WordPress, Shopify & Contao."
+      />
       <Fullpage projectsArray={projectsArray} />
       <Section css={tw`lg:fixed left-1/2 bottom-0 lg:w-1/2`}>
         <Footer />
-        {/*<MoreProjects>Weitere Projekte<AnimatedLine /></MoreProjects>*/}      
+        {/*<MoreProjects>Weitere Projekte<AnimatedLine /></MoreProjects>*/}
       </Section>
     </Layout>
   )

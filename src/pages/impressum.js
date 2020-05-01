@@ -8,7 +8,10 @@ import Grid from "../components/common/Grid"
 
 const ImprintPage = ({ data }) => (
   <Layout pageId="imprint">
-    <SEO title="Impressum" robots="noindex" />
+    <SEO
+      title="Impressum | Frontend Web Developer | Frankfurt"
+      robots="noindex"
+    />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen pt-20`}>
       <Section>

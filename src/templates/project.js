@@ -17,18 +17,22 @@ export default function Template({
   transitionStatus,
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, excerpt } = markdownRemark
   const image = frontmatter.image.childImageSharp.fluid
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title={frontmatter.title + " | " + frontmatter.subtitle}
+        description={excerpt}
+      />
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
         <ProjectImage
           transitionStatus={transitionStatus}
           pathContext={pathContext}
           color={frontmatter.color}
           image={image}
+          alt={frontmatter.title + " | " + frontmatter.subtitle}
         />
         <Section
           css={tw`flex flex-col justify-between pt-8 lg:pt-12`}
@@ -46,6 +50,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path

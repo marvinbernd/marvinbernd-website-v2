@@ -8,7 +8,10 @@ import Grid from "../components/common/Grid"
 
 const PrivacyPage = ({ data }) => (
   <Layout pageId="imprint">
-    <SEO title="Datenschutz" robots="noindex" />
+    <SEO
+      title="Datenschutz | Frontend Web Developer | Frankfurt"
+      robots="noindex"
+    />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen pt-20`}>
       <Section>

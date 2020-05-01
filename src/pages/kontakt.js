@@ -9,7 +9,10 @@ import Grid from "../components/common/Grid"
 
 const ContactPage = ({ data }) => (
   <Layout pageId="contact">
-    <SEO title="Kontakt" description="Haben Sie eine Projektidee oder bereits eine konkrete Anfrage? Gerne berate ich Sie bei der Planung Ihres nächsten Web-Projektes." />
+    <SEO
+      title="Kontakt"
+      description="Haben Sie eine Projektidee oder bereits eine konkrete Anfrage? Gerne berate ich Sie bei der Planung Ihres nächsten Web-Projektes."
+    />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
       <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
@@ -17,7 +20,7 @@ const ContactPage = ({ data }) => (
           fixed={data.file.childImageSharp.fluid}
           objectFit="cover"
           objectPosition="50% 50%"
-          alt=""
+          alt="Frontend Web Developer Frankfurt"
           css={tw`w-full h-full`}
         />
       </Section>

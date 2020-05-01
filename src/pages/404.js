@@ -11,7 +11,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const NotFoundPage = ({ data }) => (
   <Layout pageId="404">
-    <SEO title="404: Not found" />
+    <SEO title="404: Not found | Frontend Web Developer | Frankfurt" />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
       <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
@@ -19,7 +19,7 @@ const NotFoundPage = ({ data }) => (
           fixed={data.file.childImageSharp.fluid}
           objectFit="cover"
           objectPosition="50% 50%"
-          alt=""
+          alt="404: Not found"
           css={tw`w-full h-full`}
         />
       </Section>
@@ -27,11 +27,9 @@ const NotFoundPage = ({ data }) => (
         <div></div>
         <div css={tw`mb-8 lg:mb-0`}>
           <h1>404</h1>
-          <p>
-            Leider wurde die gewünschte Seite nicht gefunden.
-          </p>
+          <p>Leider wurde die gewünschte Seite nicht gefunden.</p>
           <AniLink to="/" paintDrip hex="#ffffff">
-              <Button>Zur Startseite</Button>
+            <Button>Zur Startseite</Button>
           </AniLink>
         </div>
         <Footer css={tw`self-end`} />
