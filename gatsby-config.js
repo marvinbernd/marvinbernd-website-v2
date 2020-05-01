@@ -3,6 +3,7 @@ module.exports = {
     title: `Marvin Bernd | Frontend Web Developer | Frankfurt`,
     description: `Ich bin selbständiger Frontend Web Developer aus Frankfurt. Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der Umsetzung von modernen Web-Projekten.`,
     author: `@marvinbernd`,
+    siteUrl: `https://www.marvinbernd.de`,
     menuLinks: [
       {
         name: "Home",
