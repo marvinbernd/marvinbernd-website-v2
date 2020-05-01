@@ -56,11 +56,8 @@ export const pageQuery = graphql`
         color
         image {
           childImageSharp {
-            fluid(maxWidth: 1920, quality: 90) {
+            fluid(maxWidth: 800, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
-            }
-            resize(width: 1200, quality: 90) {
-              src
             }
           }
         }

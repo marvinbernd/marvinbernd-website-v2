@@ -12,7 +12,7 @@ import CSSDA from "../components/common/CSSDA"
 
 const AboutPage = ({ data }) => (
   <Layout pageId="about">
-    <SEO title="Über mich" />
+    <SEO title="Über mich" description="Selbstständiger Frontend Web Developer aus Frankfurt. Ich entwickle Webseiten & Online-Shops mit JavaScript, React, PHP, WordPress, Shopify & Contao." />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
       <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
@@ -40,8 +40,7 @@ const AboutPage = ({ data }) => (
             <a href="https://jamstack.org/" target="_blank" rel="noopener noreferrer" css={tw`underline`}>
               Jamstack Entwicklung
             </a>
-            . Dadurch kann ich ein individuelles Produkt anbieten, welches nicht
-            an vordefinierte Systeme gebunden ist.
+            . Dadurch kann ich ein individuelles Produkt anbieten, welches zusätzlich eine bessere Performance, Skalierbarkeit und Sicherheit bietet.
           </p>
           <h2>Kenntnisse</h2>
           <div css={tw`grid grid-cols-3 gap-4`}>
@@ -84,7 +83,7 @@ export const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 800, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }

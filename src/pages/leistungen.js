@@ -13,7 +13,7 @@ import NewsletterDevelopment from "../assets/icons/newsletter-development.svg"
 
 const ServicesPage = ({ data }) => (
   <Layout pageId="services">
-    <SEO title="Home" />
+    <SEO title="Leistungen" description="Meine Leistungen: Web Entwicklung, Web Design, Online-Shops, OnPage SEO & Newsletter Entwicklung." />
 
     <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
       <Section css={tw`h-screen-1/2 md:h-screen-2/3 lg:h-full p-0 md:p-0`}>
@@ -78,7 +78,7 @@ export const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 800, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }

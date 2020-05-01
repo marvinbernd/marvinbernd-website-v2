@@ -29,14 +29,14 @@ const Logo = styled.span`
 class Header extends Component {
   state = {}
   render() {
-    const { siteTitle, showOffCanvas, onMenuButtonClick, pageId } = this.props
+    const { showOffCanvas, onMenuButtonClick, pageId } = this.props
     return (
       <HeaderWrapper>
         <NavBar>
           <NavBarLeft>
             <AniLink paintDrip hex="#ffffff" to="/">
               <Logo className={pageId === "index" || pageId === "imprint" || pageId === "privacy" ? "black" : null}>
-                {siteTitle}
+                marvin bernd
               </Logo>
             </AniLink>
           </NavBarLeft>

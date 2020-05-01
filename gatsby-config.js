@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `mb.dev`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Frontend Web Developer | Frankfurt`,
+    description: `Ich bin selbständiger Frontend Web Developer aus Frankfurt. Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der Umsetzung von modernen Web-Projekten.`,
+    author: `@marvinbernd`,
     menuLinks: [
       {
         name: "Home",
@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         name: "Über mich",
-        link: "/uerber-mich",
+        link: "/ueber-mich",
       },
       {
         name: "Kontakt",

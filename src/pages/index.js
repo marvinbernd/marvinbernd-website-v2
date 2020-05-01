@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
   const { edges: projects } = data.allMarkdownRemark
   return (
     <Layout pageId="index">
-      <SEO title="Home" />
+      <SEO title="Marvin Bernd" />
 
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
         <Section
@@ -78,7 +78,7 @@ export const query = graphql`
             color
             image {
               childImageSharp {
-                fluid(maxWidth: 1000, quality: 90) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

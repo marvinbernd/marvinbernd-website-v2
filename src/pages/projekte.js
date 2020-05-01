@@ -148,7 +148,7 @@ const ProjectsPage = ({ data }) => {
 
   return (
     <Layout pageId="projects">
-      <SEO title="Home" />
+      <SEO title="Projekte" description="Website & Online-Shops Projekte mit JavaScript, React, PHP, WordPress, Shopify & Contao." />
       <Fullpage projectsArray={projectsArray} />
       <Section css={tw`lg:fixed left-1/2 bottom-0 lg:w-1/2`}>
         <Footer />
