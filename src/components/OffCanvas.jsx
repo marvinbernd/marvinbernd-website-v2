@@ -41,10 +41,12 @@ const OffCanvas = ({ showOffCanvas, menuLinks }) => (
             {
               name: "hello@marvinbernd.de",
               link: "mailto:hello@marvinbernd.de",
+              target: "_self",
             },
             {
               name: "+49 (0)152 060 49 110",
-              link: "mailto:hello@marvinbernd.de",
+              link: "tel:+4915206049110",
+              target: "_self",
             },
           ]}
         />
@@ -52,20 +54,19 @@ const OffCanvas = ({ showOffCanvas, menuLinks }) => (
           <Menu
             menuLinks={[
               {
-                name: "Blog",
-                link: "mailto:hello@marvinbernd.de",
-              },
-              {
                 name: "LinkedIn",
-                link: "mailto:hello@marvinbernd.de",
+                link: "https://www.linkedin.com/in/marvinbernd",
+                target: "_blank",
               },
               {
                 name: "Xing",
-                link: "mailto:hello@marvinbernd.de",
+                link: "https://www.xing.com/profile/Marvin_Bernd",
+                target: "_blank",
               },
               {
                 name: "Twitter",
-                link: "mailto:hello@marvinbernd.de",
+                link: "https://twitter.com/marvinbernd",
+                target: "_blank",
               },
             ]}
           />

@@ -20,19 +20,9 @@ class ImageCarousel extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      vertical: false,
       autoplay: true,
       fade: true,
       cssEase: "linear",
-      mobileFirst: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            vertical: true,
-          },
-        },
-      ],
       afterChange: current => this.setState({ activeSlide: current }),
     }
     console.log(this.state.activeSlide)

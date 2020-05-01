@@ -18,14 +18,25 @@ const Menu = ({ menuLinks, showOffCanvas }) => (
     <List>
       {menuLinks.map((link, index) => (
         <Item key={link.name}>
-          <AniLink
-            paintDrip
-            hex="#ffffff"
-            to={link.link}
-            css={tw`text-gray px-4`}
-          >
-            {link.name}
-          </AniLink>
+          {link.target ? (
+            <a
+              href={link.link}
+              target={link.target}
+              rel={link.target === "_blank" ? "noopener noreferrer" : null}
+              css={tw`text-gray px-4`}
+            >
+              {link.name}
+            </a>
+          ) : (
+            <AniLink
+              paintDrip
+              hex="#ffffff"
+              to={link.link}
+              css={tw`text-gray px-4`}
+            >
+              {link.name}
+            </AniLink>
+          )}
         </Item>
       ))}
     </List>
