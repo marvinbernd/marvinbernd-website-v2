@@ -13,7 +13,7 @@ import ProjectContent from "../components/common/ProjectContent"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
-  pathContext,
+  pageContext,
   transitionStatus,
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -29,7 +29,7 @@ export default function Template({
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
         <ProjectImage
           transitionStatus={transitionStatus}
-          pathContext={pathContext}
+          pageContext={pageContext}
           color={frontmatter.color}
           image={image}
           alt={frontmatter.title + " | " + frontmatter.subtitle}
