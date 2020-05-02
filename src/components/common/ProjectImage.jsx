@@ -37,8 +37,8 @@ const AnimatedLine = styled.span`
   }
 `
 
-const ProjectImage = ({ pathContext, transitionStatus, image, color, alt }) => {
-  const { next } = pathContext
+const ProjectImage = ({ pageContext, transitionStatus, image, color, alt }) => {
+  const { next } = pageContext
   return (
     <Section
       className={transitionStatus}
