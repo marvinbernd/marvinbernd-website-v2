@@ -34,9 +34,10 @@ const AboutPage = ({ data }) => (
           <p>
             Seit 2015 arbeite ich als selbstständiger Web Designer & Entwickler.
             Dabei unterstütze ich Agenturen und KMUs bei der Planung und
-            Umsetzung von modernen Webseiten und Online-Shops. Dabei hat jedes
-            Projekt verschiedene Anforderungen und benötigt einen einzigartigen
-            Lösungsansatz.
+            Umsetzung von modernen Webseiten und Online-Shops. Da jedes Projekt
+            verschiedene Anforderungen hat, ist es mir immer wichtig, nicht auf
+            Standard-Lösungen zurückzugreifen, sondern ein passendes Konzept zu
+            entwickeln.
           </p>
           <p>
             Seit längerem beschäftige ich mich daher mit der{" "}

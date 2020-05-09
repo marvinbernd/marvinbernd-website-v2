@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
     <Layout pageId="index">
       <SEO
         title="Marvin Bernd | Frontend Web Developer | Frankfurt"
-        description="Ich bin selbständiger Frontend Web Developer aus Frankfurt. Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der Umsetzung von modernen Web-Projekten."
+        description="Ich bin selbständiger Frontend Web Developer aus Frankfurt. Seit 2015 unterstütze ich Agenturen und Firmen bei der Umsetzung von modernen Website Projekten."
       />
 
       <Grid css={tw`lg:grid-cols-2 lg:h-screen`}>
@@ -32,11 +32,31 @@ const IndexPage = ({ data }) => {
               aus Frankfurt, Deutschland.
             </h1>
             <p>
-              Seit mehreren Jahren unterstütze ich Agenturen und Firmen bei der
-              Umsetzung von modernen Web-Projekten. Von Newsletter-Kampagnen bis
-              hin zu mehrsprachigen Online-Shops. Egal welcher Projektumfang,
-              mir ist dabei immer wichtig ein einzigartiges Produkt mit einer
-              hohen Qualität und einfachen Skalierbarkeit zu entwickeln.
+              Seit 2015 unterstütze ich Agenturen und Firmen bei der Umsetzung
+              von modernen Website Projekten. Von Newsletter-Kampagnen bis hin
+              zu mehrsprachigen Online-Shops. Egal welcher Projektumfang, mir
+              ist dabei immer wichtig ein einzigartiges Produkt mit einer hohen
+              Qualität und einfachen Skalierbarkeit zu entwickeln.
+            </p>
+            <p>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                CSS
+              </span>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                JavaScript
+              </span>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                PHP
+              </span>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                React
+              </span>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                WordPress
+              </span>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                Shopify
+              </span>
             </p>
             <AniLink to="/ueber-mich/" paintDrip hex="#ffffff">
               <Button>Mehr erfahren</Button>
