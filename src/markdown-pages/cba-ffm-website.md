@@ -5,6 +5,7 @@ title: "Christl+Bruchhäuser Website"
 subtitle: "Webdesign & WordPress Programmierung"
 year: "2020"
 client: "Christl+Bruchhäuser GmbH"
+url: "https://www.cba-ffm.de/"
 image: "./cba-ffm-website.png"
 color: "#031761"
 ---

@@ -5,6 +5,7 @@ title: "White off/ Website"
 subtitle: "WordPress Programmierung"
 year: "2019"
 client: "White off/"
+url: "https://www.wailua.eu/"
 image: "./whiteoff-website.png"
 color: "#674172"
 ---

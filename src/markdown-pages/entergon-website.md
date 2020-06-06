@@ -5,6 +5,7 @@ title: "entergon Website"
 subtitle: "WordPress Programmierung & SEO"
 year: "2020"
 client: "entergon GmbH & Co. KG"
+url: "https://entergon.de/"
 image: "./entergon-website.png"
 color: "#93C252"
 ---

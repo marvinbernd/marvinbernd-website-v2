@@ -5,6 +5,7 @@ title: "Wailua Website"
 subtitle: "Webdesign, Programmierung & SEO"
 year: "2019"
 client: "wailua e.K."
+url: "http://whiteoff.de/"
 image: "./wailua-website.png"
 color: "#eb9532"
 ---

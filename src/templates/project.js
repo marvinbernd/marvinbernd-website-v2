@@ -58,6 +58,7 @@ export const pageQuery = graphql`
         subtitle
         year
         client
+        url
         color
         image {
           childImageSharp {

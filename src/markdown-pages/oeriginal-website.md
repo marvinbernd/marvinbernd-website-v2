@@ -5,6 +5,7 @@ title: "Oeriginal Website"
 subtitle: "WordPress Programmierung"
 year: "2019"
 client: "Oeriginal Marke & Kommunikation"
+url: "https://www.oeriginal.ch/"
 image: "./oeriginal-website.png"
 color: "#6c7a89"
 ---
