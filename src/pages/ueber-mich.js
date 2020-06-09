@@ -77,8 +77,8 @@ const AboutPage = ({ data }) => (
               <li>Shopify</li>
             </ul>
           </div>
-          <h2 css={tw`mt-4`}>Awards</h2>
-          <CSSDA />
+          {/* <h2 css={tw`mt-4`}>Awards</h2>
+          <CSSDA /> */}
         </div>
         <Footer css={tw`self-end`} />
       </Section>
