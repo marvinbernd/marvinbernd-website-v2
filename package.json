@@ -44,7 +44,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "tailwindcss": "^1.2.0",
     "twin.macro": "^1.0.0-alpha.8",
-    "typeface-rubik": "^1.1.13",
+    "typeface-poppins": "^1.1.13",
     "typography": "^0.16.19"
   },
   "devDependencies": {
