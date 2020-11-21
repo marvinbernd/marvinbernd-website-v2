@@ -80,17 +80,6 @@ module.exports = {
         // Accepts all options defined by `gatsby-plugin-postcss` plugin.
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `700`],
-          },
-        ],
-      },
-    },
     `gatsby-plugin-transition-link`,
     /* {
       resolve: `gatsby-plugin-typography`,

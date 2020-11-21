@@ -19,7 +19,6 @@
     "gatsby-plugin-netlify": "^2.2.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-postcss": "^2.2.1",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.5.3",
@@ -45,6 +44,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "tailwindcss": "^1.2.0",
     "twin.macro": "^1.0.0-alpha.8",
+    "typeface-rubik": "^1.1.13",
     "typography": "^0.16.19"
   },
   "devDependencies": {
