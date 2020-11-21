@@ -46,10 +46,13 @@ const IndexPage = ({ data }) => {
                 JavaScript
               </span>
               <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
-                PHP
+                React
               </span>
               <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
-                React
+                Node.js
+              </span>
+              <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
+                GraphQL
               </span>
               <span css={tw`py-1 px-2 mr-1 mb-1 text-xs bg-gray-light`}>
                 WordPress

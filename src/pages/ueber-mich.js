@@ -56,11 +56,11 @@ const AboutPage = ({ data }) => (
           <h2>Kenntnisse</h2>
           <div css={tw`grid grid-cols-3 gap-4`}>
             <ul>
-              <li>HTML5</li>
-              <li>CSS3 (Sass)</li>
+              <li>CSS (Sass)</li>
               <li>JavaScript (ES6)</li>
-              <li>React.js</li>
-              <li>PHP</li>
+              <li>TypeScript</li>
+              <li>React (Native)</li>
+              <li>Node.js</li>
             </ul>
             <ul>
               <li>REST APIs</li>
@@ -70,10 +70,10 @@ const AboutPage = ({ data }) => (
               <li>Hugo</li>
             </ul>
             <ul>
-              <li>Kirby</li>
               <li>WordPress</li>
-              <li>Contao</li>
-              <li>Shopware</li>
+              <li>Drupal</li>
+              <li>Contentful</li>
+              <li>Prismic</li>
               <li>Shopify</li>
             </ul>
           </div>
