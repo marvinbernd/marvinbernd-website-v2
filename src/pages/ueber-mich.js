@@ -90,7 +90,7 @@ export default AboutPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "marvin-bernd-profile@2x.jpg" }) {
+    file(relativePath: { eq: "marvin-bernd-profile-2.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
