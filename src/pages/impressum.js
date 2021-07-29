@@ -23,10 +23,10 @@ const ImprintPage = ({ data }) => (
         <p>
           Marvin Bernd
           <br />
-          Web Designer & Developer
+          Frontend Web Developer
           <br />
-          Zwingenberger Weg 2<br />
-          65428 Rüsselsheim am Main
+          Beethovenstraße 15<br />
+          63263 Neu-Isenburg
           <br />
           Deutschland
           <br />
