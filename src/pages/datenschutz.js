@@ -90,9 +90,9 @@ const PrivacyPage = ({ data }) => (
           Website ist:
           <br />
           <br /> Marvin Bernd
-          <br /> Web Designer &amp; Developer
-          <br /> Zwingenberger Weg 2
-          <br /> 65428 Rüsselsheim am Main
+          <br /> c/o WeWork
+          <br /> Taunusanlage 8
+          <br /> 60329 Frankfurt am Main
           <br />
           <br /> Telefon: +49 1520 6049110
           <br /> Email: hello@marvinbernd.de
