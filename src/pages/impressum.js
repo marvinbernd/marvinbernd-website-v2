@@ -25,8 +25,9 @@ const ImprintPage = ({ data }) => (
           <br />
           Frontend Web Developer
           <br />
-          Beethovenstraße 15<br />
-          63263 Neu-Isenburg
+          c/o WeWork<br />
+          Taunusanlage 8<br />
+          60329 Frankfurt am Main
           <br />
           Deutschland
           <br />
