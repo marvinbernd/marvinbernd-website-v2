@@ -25,15 +25,14 @@ const ImprintPage = ({ data }) => (
           <br />
           Frontend Web Developer
           <br />
-          c/o WeWork<br />
-          Taunusanlage 8<br />
-          60329 Frankfurt am Main
+          Zwingenberger Weg 2<br />
+          65428 Rüsselsheim am Main
           <br />
           Deutschland
           <br />
         </p>
         <p>
-          Telefon: +49 1520 6049110
+          Telefon: +49 156 79775388
           <br />
           Email: hello@marvinbernd.de
           <br />
