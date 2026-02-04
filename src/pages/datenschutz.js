@@ -90,11 +90,10 @@ const PrivacyPage = ({ data }) => (
           Website ist:
           <br />
           <br /> Marvin Bernd
-          <br /> c/o WeWork
-          <br /> Taunusanlage 8
-          <br /> 60329 Frankfurt am Main
+          <br /> Zwingenberger Weg 2
+          <br /> 65428 Rüsselsheim am Main
           <br />
-          <br /> Telefon: +49 1520 6049110
+          <br /> Telefon: +49 156 79775388
           <br /> Email: hello@marvinbernd.de
           <br />
           <br /> Verantwortliche Stelle ist die natürliche oder juristische
