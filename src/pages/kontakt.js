@@ -38,7 +38,7 @@ const ContactPage = ({ data }) => (
             <a href="mailto:hello@marvinbernd.de">hello@marvinbernd.de</a>
             <br />
             <strong>Telefon: </strong>
-            <a href="tel:+4915206049110">+49 152 060 49 110</a>
+            <a href="tel:+4915679775388">+49 156 79775388</a>
           </p>
         </div>
         <Footer css={tw`self-end`} />
