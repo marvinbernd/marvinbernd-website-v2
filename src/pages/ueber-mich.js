@@ -32,7 +32,7 @@ const AboutPage = ({ data }) => (
         <div css={tw`mb-8 lg:mb-0`}>
           <h1>Über mich</h1>
           <p>
-            Seit 2015 arbeite ich als selbstständiger Web Designer & Entwickler.
+            Seit 2015 arbeite ich als selbstständiger Web Entwickler.
             Dabei unterstütze ich Agenturen und KMUs bei der Planung und
             Umsetzung von modernen Webseiten und Online-Shops. Da jedes Projekt
             verschiedene Anforderungen hat, ist es mir immer wichtig, nicht auf
